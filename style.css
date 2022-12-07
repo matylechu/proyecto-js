@@ -3,7 +3,7 @@ body{
     margin: 0px;
     background-color: aliceblue;
 }
-
+/*NAV*/
 .page-nav{
     background-color: #2196f3;
     border: 1px solid black;
@@ -34,7 +34,7 @@ button{
     background-color: #008CBA;
     color: white;
 }
-
+/*MAIN*/
 .page-content{
     display: flex;
     flex-wrap: wrap;
@@ -90,4 +90,10 @@ button{
 .button-add:hover{
     background-color: green;
     color: white;
+}
+/*FOOTER*/
+.foot{
+    border: 1px solid black;
+    position: relative;
+    background-color: rgb(51, 48, 48);
 }
