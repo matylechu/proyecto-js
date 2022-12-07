@@ -1,3 +1,6 @@
+let usuario = prompt("Ingrese su nombre de Usuario")
+alert("Bienvenido a la Tienda FWC " + usuario)
+
 let productos = []
 let total = 0
 
