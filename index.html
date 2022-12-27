@@ -13,238 +13,16 @@
    <header>
     <div class="page-nav">
         <h1>🏆⚽Tienda FWC🏆⚽</h1>
-        <button id= "chango" class="button-chango" onclick="pay()">Carrito</button>
+        <button id= "chango" class="button-chango">🛒<span id="cantidadCarrito" class="cantidadCarrito"></span></button>
     </div>
 
 </header>
    
 <main>
-    <div class="page-content">
-        <div class="product-container">
-            <h3>Titular Qatar</h3>
-            <img src="img/qatar.jpg" alt="qatar">
-            <p> NIKE | Red</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Qatar', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Ecuador</h3>
-            <img src="img/ecuador.webp" alt="Ecuador">
-            <p> MARATHON | Yellow</p>
-            <h2>USD$50</h2>
-            <button class="button-add" onclick="add('Ecuador', 50)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Senegal</h3>
-            <img src="img/senegal.webp" alt="Senegal">
-            <p> PUMA | DarkGreen</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Senegal', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Holanda</h3>
-            <img src="img/holanda.jpg" alt="Holanda">
-            <p> NIKE | Orange</p>
-            <h2>USD$115</h2>
-            <button class="button-add" onclick="add('Holanda', 115)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Inglaterra</h3>
-            <img src="img/england.webp" alt="england">
-            <p> NIKE | White</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Inglaterra', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Iran</h3>
-            <img src="img/iran.jpg" alt="Iran">
-            <p> MAJID | White</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Iran', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular USA</h3>
-            <img src="img/usa.webp" alt="USA">
-            <p> NIKE | White</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('USA', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Gales</h3>
-            <img src="img/wales.webp" alt="Gales">
-            <p> Adidas | Red</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Gales', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Argentina</h3>
-            <img src="img/argentina.webp" alt="Argentina">
-            <p> Adidas | White / Light Blue</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Argentina', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Arabia Saudita</h3>
-            <img src="img/ksa.webp" alt="KSA">
-            <p> NIKE | White</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('KSA', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Mexico</h3>
-            <img src="img/mexico.webp" alt="Mexico">
-            <p> Adidas | Green</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Mexico', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Polonia</h3>
-            <img src="img/POLONIA.webp" alt="Poland">
-            <p> NIKE | White</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Polonia', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Francia</h3>
-            <img src="img/francia.webp" alt="Francia">
-            <p> NIKE | Navy Blue</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Francia', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Australia</h3>
-            <img src="img/australia.webp" alt="Australia">
-            <p> NIKE | Yellow</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Australia', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Dinamarca</h3>
-            <img src="img/dinamarca.webp" alt="Dinamarca">
-            <p> Hummel | Red</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Dinamarca', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Tunez</h3>
-            <img src="img/tunez.jpg" alt="Tunez">
-            <p> KAPPA | Red</p>
-            <h2>USD$100</h2>
-            <button class=button-add onclick="add('Tunez', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular España</h3>
-            <img src="img/spain.webp" alt="spain">
-            <p> Adidas | Red</p>
-            <h2>USD$100</h2>
-            <button class=button-add onclick="add('España', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Costa Rica</h3>
-            <img src="img/costa-rica.jfif" alt="Costa Rica">
-            <p> NewBalance | Red</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Costa Rica', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Alemania</h3>
-            <img src="img/alemania.webp" alt="Alemania">
-            <p> ADIDAS | White</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Alemania', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Japon</h3>
-            <img src="img/japon.webp" alt="Japon">
-            <p> ADIDAS | Blue</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Japon', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Belgica</h3>
-            <img src="img/belgica.webp" alt="Belgica">
-            <p> Adidas | Red</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Belgica', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Canada</h3>
-            <img src="img/canada.jpg" alt="Canada">
-            <p> NIKE | Red</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Canada', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Marruecos</h3>
-            <img src="img/marruecos.webp" alt="Marruecos">
-            <p> PUMA | Red</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Marruecos', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Croacia</h3>
-            <img src="img/croacia.webp" alt="Croacia">
-            <p> NIKE | Red White</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Croacia', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Brasil</h3>
-            <img src="img/brasil.webp" alt="Brasil">
-            <p> NIKE | Yellow</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Brasil', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Serbia</h3>
-            <img src="img/serbia.webp" alt="Serbia">
-            <p> PUMA | Red</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Serbia', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Suiza</h3>
-            <img src="img/suiza.webp" alt="Suiza">
-            <p> PUMA | Red</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Suiza', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Camerun</h3>
-            <img src="img/cameru.jpg" alt="Camerun">
-            <p> LECOQ | DarkGreen</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Camerun', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Portugal</h3>
-            <img src="img/portugal.webp" alt="Portugal">
-            <p> NIKE | Crimson</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Portugal', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Ghana</h3>
-            <img src="img/ghana.webp" alt="Ghana">
-            <p> PUMA | White</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Ghana', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Uruguay</h3>
-            <img src="img/uruguay.webp" alt="Uruguay">
-            <p> PUMA | Sky Blue</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Uruguay', 100)">Agregar</button>
-        </div>
-        <div class="product-container">
-            <h3>Titular Corea del Sur</h3>
-            <img src="img/corea.webp" alt="Corea">
-            <p> NIKE | Crimson</p>
-            <h2>USD$100</h2>
-            <button class="button-add" onclick="add('Corea del Sur', 100)">Agregar</button>
-        </div>
-    </div>
+ <!-- tienda container -->
+    <div id="pageContent" class="page-content"></div>
+ <!-- modal container -->
+    <div id="modal-container" class="modal-container"></div>
     
 </main>
 
@@ -255,7 +33,8 @@
         </div>
     </div>
 </footer>
-
-    <script src="script.js"></script>
+    <script src="./JS/productos.js"></script>
+    <script src="./JS/script.js"></script>
+    <script src="./JS/carrito.js"></script>
 </body>
 </html>
