@@ -37,9 +37,10 @@ button{
     color: black;
     border: 2px solid #008CBA;
     transition-duration: 0.4s;
-    position: absolute;
+    position: fixed;
     right: 15px;
     bottom: 15px;
+    z-index: 10;
 }
 
 .button-chango:hover{
@@ -108,6 +109,17 @@ button{
     border: 1px solid black;
     position: relative;
     background-color: rgb(51, 48, 48);
+}
+.foot-cont a{
+    font-size: 25px;
+    color:#008CBA;
+    margin-left: 15px;
+}
+.foot-cont p{
+    color: #008CBA;
+    margin-left: 15px;
+    font-weight: bold;
+
 }
 
 /*modal content*/ 
