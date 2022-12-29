@@ -37,12 +37,6 @@ const pintarCarrito = () => {
     eliminarProducto(product.id)
     })
 
-    /* let eliminar = document.createElement("span")
-    eliminar.innerText = "❌"
-    eliminar.className = "delete-product"
-    carritoContent.append(eliminar)
-
-    eliminar.addEventListener("click", eliminarProducto) */
     })
 
     const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0)
@@ -62,10 +56,14 @@ const pintarCarrito = () => {
             return carritoId !== foundId
         })
         carritoCounter()
+        saveLocal()
         pintarCarrito()
     }
 
     const carritoCounter = () => {
         cantidadCarrito.style.display = "block"
-        cantidadCarrito.innerText = carrito.length
+        const carritoLength = carrito.length
+        localStorage.setItem("carritoLength", JSON.stringify(carritoLength))
+        cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"))
      }
+     carritoCounter()

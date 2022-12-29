@@ -3,7 +3,7 @@ let verCarrito = document.getElementById("chango")
 let modalcontainer = document.getElementById("modal-container")
 let cantidadCarrito = document.getElementById("cantidadCarrito")
 
-let carrito = []
+let carrito = JSON.parse(localStorage.getItem("carrito")) || []
 
 camisetas.forEach((product)=> {
     let content = document.createElement("div")
@@ -39,9 +39,15 @@ camisetas.forEach((product)=> {
             precio: product.precio,
             cantidad: product.cantidad
         })
+          console.log(carrito)
+          console.log(carrito.length)
+          carritoCounter()
+          saveLocal()
         }
-    console.log(carrito)
-    carritoCounter()
     })
 })
+
+const saveLocal = () => {
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+}
 
