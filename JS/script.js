@@ -17,13 +17,20 @@ camisetas.forEach((product)=> {
     pageContent.append(content)
 
     let comprar = document.createElement("button")
-    comprar.innerText = "Comprar"
+    comprar.innerText = "Agregar al Carrito"
     comprar.className = "button-add"
 
     content.append(comprar)
 
     comprar.addEventListener("click", () =>{
-    
+        
+        Swal.fire({
+            text: 'Se agrego al Carrito con Exito!',
+            showConfirmButton: false,
+            timer: 1000,
+        })
+        
+
     const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.id)
         if(repeat){
             carrito.map((prod) => {

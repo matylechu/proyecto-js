@@ -44,6 +44,22 @@ const pintarCarrito = () => {
     totalBuying.className = "total-content"
     totalBuying.innerHTML = `Total a Pagar: USD$${total}`
     modalcontainer.append(totalBuying) 
+
+    let btnComprar = document.createElement("button")
+    btnComprar.innerText = "Finalizar Compra"
+    btnComprar.className = "button-finish"
+
+    modalcontainer.append(btnComprar)
+    btnComprar.addEventListener("click", () => {
+        Swal.fire({
+            title: 'Muchas Gracias!!!',
+            text: 'Su compra se realizo con exito!',
+            icon: 'success',
+            confirmButtonText: 'Cerrar'
+        })
+    })
+
+
 }
     verCarrito.addEventListener("click",pintarCarrito)
 
